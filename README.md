@@ -1,5 +1,5 @@
 
-# Quorum blockchain network simulation repository w/ 2 validators in different namespaces
+# Quorum blockchain network simulation (2 validators in 2 different namespaces)
 
 ### Generate the validators
 
