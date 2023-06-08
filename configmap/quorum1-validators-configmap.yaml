@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quorum-validators-configmap
+  labels:
+    app: quorum-validators-configmap
+  namespace: quorum1
+data:
+  validator1PubKey: "539efe9f320e651ddbbc7f1f6d1f1ceb9b2c03d29df7aa999345e40edf46d2e10786b3726ed857a7443ba0ad4413feafdd199509e4ca6ab73ea7357d61a40d7f"
+  validator2PubKey: "ee6e9cd7b8d294359ed45c93f92a883933247350ee0aa42d1a3c19e86d64d07a5648842694df0b6f91b3e4a210cd250debdc2739ff77f541dbb28f6d6f0a72b4"

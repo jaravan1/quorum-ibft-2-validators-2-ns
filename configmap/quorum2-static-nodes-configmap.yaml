@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quorum-static-nodes-configmap
+  labels:
+    app: quorum-static-nodes-configmap
+  namespace: quorum2
+data:
+  static-nodes.json: |-
+    [
+      "enode://539efe9f320e651ddbbc7f1f6d1f1ceb9b2c03d29df7aa999345e40edf46d2e10786b3726ed857a7443ba0ad4413feafdd199509e4ca6ab73ea7357d61a40d7f@validator1-0.quorum-validator1.quorum1.svc.cluster.local:30303?discport=0",
+      "enode://ee6e9cd7b8d294359ed45c93f92a883933247350ee0aa42d1a3c19e86d64d07a5648842694df0b6f91b3e4a210cd250debdc2739ff77f541dbb28f6d6f0a72b4@validator2-0.quorum-validator2.quorum2.svc.cluster.local:30303?discport=0"
+    ]

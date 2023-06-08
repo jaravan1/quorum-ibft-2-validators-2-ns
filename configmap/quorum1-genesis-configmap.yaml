@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: goquorum-genesis-configmap
+  labels:
+    app: goquorum-genesis-configmap
+  namespace: quorum1
+data:
+  genesis.json: |-
+    {
+      "nonce": "0x0",
+      "timestamp": "0x58ee40ba",
+      "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000edea9418baa32bcbf595ad28569212d0cf2b64e150d27b9459b55f1e790806d7527aaea7df3857636bad3c7480c0",
+      "gasLimit": "0xe0000000",
+      "gasUsed": "0x0",
+      "number": "0x0",
+      "difficulty": "0x1",
+      "coinbase": "0x0000000000000000000000000000000000000000",
+      "mixHash": "0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365",
+      "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "config": {
+        "chainId": 10,
+        "homesteadBlock": 0,
+        "eip150Block": 0,
+        "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "eip155Block": 0,
+        "eip158Block": 0,
+        "byzantiumBlock": 0,
+        "constantinopleBlock": 0,
+        "petersburgBlock": 0,
+        "istanbulBlock": 0,
+        "muirglacierblock": 0,
+        "berlinBlock": 0,
+        "londonBlock": 0,
+        "isQuorum": true,
+        "maxCodeSizeConfig": [
+          {
+            "block": 0,
+            "size": 64
+          }
+        ],
+        "txnSizeLimit": 64,
+        "ibft": {
+          "policy": 0,
+          "epoch": 30000,
+          "ceil2Nby3Block": 0,
+          "blockperiodseconds": 5,
+          "requesttimeoutseconds": 10
+        }
+      },
+      "alloc": {
+        "0x1933ea9b67090c320349a067e761bb4ea7ecbfa2": {
+          "balance": "1000000000000000000000000000"
+        },
+        "0xcbaa038bd385f649e132c40ccadc8621683ba130": {
+          "balance": "1000000000000000000000000000"
+        }
+      }
+    }
