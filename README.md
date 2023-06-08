@@ -1,11 +1,13 @@
 
 # Quorum blockchain network simulation - 2 validators in 2 different namespaces
 
-### Generate the validators
+### Generate the validators 
 
 ```
 npx quorum-genesis-tool --consensus ibft --chainID 10 --blockperiod 5 --requestTimeout 10 --epochLength 30000 --difficulty 1 --gasLimit '0xe0000000' --coinbase '0x0000000000000000000000000000000000000000' --validators 2 --members 0 --bootnodes 0
 ```
+
+Please note that the files in the directories are already populated with the generated values. This command aims only to demonstrate how the genesis file and the validators info were generated.
 
 ### Start minikube with calico for network policies:
 
