@@ -7,6 +7,22 @@
 npx quorum-genesis-tool --consensus ibft --chainID 10 --blockperiod 5 --requestTimeout 10 --epochLength 30000 --difficulty 1 --gasLimit '0xe0000000' --coinbase '0x0000000000000000000000000000000000000000' --validators 2 --members 0 --bootnodes 0
 ```
 
+### Start minikube with calico for network policies:
+
+```
+minikube start --network-plugin=cni --cni=calico
+```
+
+### Deploy/Remove installation
+
+```bash
+./deploy.sh
+```
+
+```bash
+./remove.sh
+```
+
 ### Ephemeral container with `tcpdump` 
 
 Start ephemeral container on target pod:
